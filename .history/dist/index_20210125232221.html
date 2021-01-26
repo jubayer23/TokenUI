@@ -8,21 +8,12 @@
         <meta name="author" content="" />
         <title>Dashboard - SB Admin</title>
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
-
-        <!-- Font-->
-        <link rel="stylesheet" type="text/css" href="token/css/montserrat-font.css">
-        <link rel="stylesheet" type="text/css" href="token/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
-        <!-- Main Style Css -->
-        <link rel="stylesheet" href="token/css/style.css"/>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Sprytech</a>
+            <a class="navbar-brand" href="index.html">Start Bootstrap</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
@@ -112,87 +103,82 @@
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
-                            Sprytech
+                        Start Bootstrap
                     </div>
                 </nav>
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="page-content" style="background-image: url('token/images/wizard-v10-bg.jpg')">
-                        <div class="wizard-v10-content">
-                            <div class="wizard-form">
-                                <div class="wizard-header">
-                                    <h3>Token Creation</h3>
+                    <div class="well">
+                        <ul class="nav nav-tabs">
+                          <li class="active"><a href="#home" data-toggle="tab">Profile</a></li>
+                          <li><a href="#profile" data-toggle="tab">Password</a></li>
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                          <div class="tab-pane active in" id="home">
+                            <form id="tab">
+                                <label>Username</label>
+                                <input type="text" value="jsmith" class="input-xlarge">
+                                <label>First Name</label>
+                                <input type="text" value="John" class="input-xlarge">
+                                <label>Last Name</label>
+                                <input type="text" value="Smith" class="input-xlarge">
+                                <label>Email</label>
+                                <input type="text" value="jsmith@yourcompany.com" class="input-xlarge">
+                                <label>Address</label>
+                                <textarea value="Smith" rows="3" class="input-xlarge">2817 S 49th
+                        Apt 314
+                        San Jose, CA 95101
+                                </textarea>
+                                <label>Time Zone</label>
+                                <select name="DropDownTimezone" id="DropDownTimezone" class="input-xlarge">
+                                  <option value="-12.0">(GMT -12:00) Eniwetok, Kwajalein</option>
+                                  <option value="-11.0">(GMT -11:00) Midway Island, Samoa</option>
+                                  <option value="-10.0">(GMT -10:00) Hawaii</option>
+                                  <option value="-9.0">(GMT -9:00) Alaska</option>
+                                  <option selected="selected" value="-8.0">(GMT -8:00) Pacific Time (US & Canada)</option>
+                                  <option value="-7.0">(GMT -7:00) Mountain Time (US & Canada)</option>
+                                  <option value="-6.0">(GMT -6:00) Central Time (US & Canada), Mexico City</option>
+                                  <option value="-5.0">(GMT -5:00) Eastern Time (US & Canada), Bogota, Lima</option>
+                                  <option value="-4.0">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                                  <option value="-3.5">(GMT -3:30) Newfoundland</option>
+                                  <option value="-3.0">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                                  <option value="-2.0">(GMT -2:00) Mid-Atlantic</option>
+                                  <option value="-1.0">(GMT -1:00 hour) Azores, Cape Verde Islands</option>
+                                  <option value="0.0">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                                  <option value="1.0">(GMT +1:00 hour) Brussels, Copenhagen, Madrid, Paris</option>
+                                  <option value="2.0">(GMT +2:00) Kaliningrad, South Africa</option>
+                                  <option value="3.0">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                                  <option value="3.5">(GMT +3:30) Tehran</option>
+                                  <option value="4.0">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                                  <option value="4.5">(GMT +4:30) Kabul</option>
+                                  <option value="5.0">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                                  <option value="5.5">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                                  <option value="5.75">(GMT +5:45) Kathmandu</option>
+                                  <option value="6.0">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                                  <option value="7.0">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                                  <option value="8.0">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                                  <option value="9.0">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                                  <option value="9.5">(GMT +9:30) Adelaide, Darwin</option>
+                                  <option value="10.0">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                                  <option value="11.0">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                                  <option value="12.0">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                                </select>
+                                  <div>
+                                    <button class="btn btn-primary">Update</button>
                                 </div>
-                                <form class="form-register" action="#" method="post">
-                                    <div id="form-total">
-                                        <!-- SECTION 1 -->
-                                        <h2>1</h2>
-                                        <section>
-                                            <div class="inner">
-                                                <div class="form-row">
-                                                    <div class="form-holder form-holder-2">
-                                                        <label for="first-name">First Name</label>
-                                                        <input type="text" class="form-control" id="first-name" name="first-name">
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="form-holder form-holder-2">
-                                                        <label for="last-name">Last Name</label>
-                                                        <input type="text" class="form-control" id="last-name" name="last-name">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <!-- SECTION 2 -->
-                                        <h2>2</h2>
-                                        <section>
-                                            <div class="inner">
-                                                <div class="form-row">
-                                                    <div class="form-holder form-holder-2">
-                                                        <label for="email">Email Address</label>
-                                                        <input type="email" class="form-control" id="email" name="email" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="form-holder form-holder-2">
-                                                        <label for="password">Password</label>
-                                                        <input type="password" class="form-control" id="password" name="password">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <!-- SECTION 3 -->
-                                        <h2>3</h2>
-                                        <section>
-                                            <div class="inner">
-                                                <div class="form-row">
-                                                    <div class="form-holder form-holder-2">
-                                                        <label for="subject">Subject</label>
-                                                        <select name="subject" id="subject" class="form-control">
-                                                            <option value="" disabled selected>Your Subject</option>
-                                                            <option value="Finance">Finance</option>
-                                                            <option value="Marketing">Marketing</option>
-                                                            <option value="IT Support">IT Support</option>
-                                                        </select>
-                                                        <span class="select-btn">
-                                                            <i class="zmdi zmdi-chevron-down"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="form-holder form-holder-2">
-                                                        <label for="comment">Comment</label>
-                                                        <input type="text" name="comment" class="form-control" id="comment">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                            </form>
+                          </div>
+                          <div class="tab-pane fade" id="profile">
+                            <form id="tab2">
+                                <label>New Password</label>
+                                <input type="password" class="input-xlarge">
+                                <div>
+                                    <button class="btn btn-primary">Update</button>
+                                </div>
+                            </form>
+                          </div>
+                      </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
@@ -217,8 +203,5 @@
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/datatables-demo.js"></script>
-        <script src="token/js/jquery-3.3.1.min.js"></script>
-	    <script src="token/js/jquery.steps.js"></script>
-    	<script src="token/js/main.js"></script>
     </body>
 </html>

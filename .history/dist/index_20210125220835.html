@@ -8,21 +8,12 @@
         <meta name="author" content="" />
         <title>Dashboard - SB Admin</title>
         <link href="css/styles.css" rel="stylesheet" />
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" crossorigin="anonymous"></script>
-
-        <!-- Font-->
-        <link rel="stylesheet" type="text/css" href="token/css/montserrat-font.css">
-        <link rel="stylesheet" type="text/css" href="token/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
-        <!-- Main Style Css -->
-        <link rel="stylesheet" href="token/css/style.css"/>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Sprytech</a>
+            <a class="navbar-brand" href="index.html">Start Bootstrap</a>
             <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
@@ -112,86 +103,76 @@
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
-                            Sprytech
+                        Start Bootstrap
                     </div>
                 </nav>
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="page-content" style="background-image: url('token/images/wizard-v10-bg.jpg')">
-                        <div class="wizard-v10-content">
-                            <div class="wizard-form">
-                                <div class="wizard-header">
-                                    <h3>Token Creation</h3>
-                                </div>
-                                <form class="form-register" action="#" method="post">
-                                    <div id="form-total">
-                                        <!-- SECTION 1 -->
-                                        <h2>1</h2>
-                                        <section>
-                                            <div class="inner">
-                                                <div class="form-row">
-                                                    <div class="form-holder form-holder-2">
-                                                        <label for="first-name">First Name</label>
-                                                        <input type="text" class="form-control" id="first-name" name="first-name">
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="form-holder form-holder-2">
-                                                        <label for="last-name">Last Name</label>
-                                                        <input type="text" class="form-control" id="last-name" name="last-name">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <!-- SECTION 2 -->
-                                        <h2>2</h2>
-                                        <section>
-                                            <div class="inner">
-                                                <div class="form-row">
-                                                    <div class="form-holder form-holder-2">
-                                                        <label for="email">Email Address</label>
-                                                        <input type="email" class="form-control" id="email" name="email" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="form-holder form-holder-2">
-                                                        <label for="password">Password</label>
-                                                        <input type="password" class="form-control" id="password" name="password">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <!-- SECTION 3 -->
-                                        <h2>3</h2>
-                                        <section>
-                                            <div class="inner">
-                                                <div class="form-row">
-                                                    <div class="form-holder form-holder-2">
-                                                        <label for="subject">Subject</label>
-                                                        <select name="subject" id="subject" class="form-control">
-                                                            <option value="" disabled selected>Your Subject</option>
-                                                            <option value="Finance">Finance</option>
-                                                            <option value="Marketing">Marketing</option>
-                                                            <option value="IT Support">IT Support</option>
-                                                        </select>
-                                                        <span class="select-btn">
-                                                            <i class="zmdi zmdi-chevron-down"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="form-row">
-                                                    <div class="form-holder form-holder-2">
-                                                        <label for="comment">Comment</label>
-                                                        <input type="text" name="comment" class="form-control" id="comment">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
+                    <div class="container-fluid">
+                        <h1 class="mt-4">Dashboard</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol>
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-primary text-white mb-4">
+                                    <div class="card-body">Primary Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                     </div>
-                                </form>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body">Warning Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-success text-white mb-4">
+                                    <div class="card-body">Success Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger text-white mb-4">
+                                    <div class="card-body">Danger Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-area mr-1"></i>
+                                        Area Chart Example
+                                    </div>
+                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar mr-1"></i>
+                                        Bar Chart Example
+                                    </div>
+                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
@@ -217,8 +198,5 @@
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/datatables-demo.js"></script>
-        <script src="token/js/jquery-3.3.1.min.js"></script>
-	    <script src="token/js/jquery.steps.js"></script>
-    	<script src="token/js/main.js"></script>
     </body>
 </html>
